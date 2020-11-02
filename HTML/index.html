@@ -131,20 +131,35 @@
     <section>
       <p>Напишите нам</p>
       <form action="#" method="post">
-        <p>Ваше имя</p>
         <p>
-          <input type="text" name="name" placeholder="Имя Фамилия" />
+          <label for="user-name">Ваше имя</label>
+          <input
+            id="user-name"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+          />
         </p>
-        <p>Ваш e-mail:</p>
         <p>
-          <input type="email" name="email" placeholder="email@example.com" />
+          <label for="user-login">Ваш e-mail:</label>
+          <input
+            id="user-login"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
         </p>
-        <p>Текст письма:</p>
         <p>
-          <input type="text" name="text" placeholder="В свободной форме" />
+          <label id="user-text">Текст письма:</label>
+          <input
+            id="user-text"
+            type="text"
+            name="text"
+            placeholder="В свободной форме"
+          />
         </p>
       </form>
-      <button type="button">Отправить</button>
+      <button type="submit">Отправить</button>
       <button type="button">Закрыть</button>
     </section>
   </body>
