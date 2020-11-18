@@ -4,96 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700.."
+      rel="stylesheet"
+    />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <!-- <div class="container"> -->
         <a>
           <img
             src="../svg/nerds-logo.svg"
+            class="main-header-logo"
             width="188"
             height="93"
             alt="Логотип
           Nerds"
           />
         </a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="site-navigation">
+          <li><a href="#" class="element-navigation">Студия</a></li>
+          <li><a href="#" class="element-navigation">Клиенты</a></li>
+          <li><a href="#" class="element-navigation">Магазин</a></li>
+          <li><a href="#" class="element-navigation">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
-            <button type="button">Корзина</button>
+            <img src="../svg/cart-icon.svg" alt="Иконка корзины"
+            class="basket-icon"
+          </li>
+          <li>
+            <button type="button" class="basket">Корзина</button>
           </li>
         </ul>
+        <!-- </div> -->
       </nav>
     </header>
     <main>
       <h1>Дизайн-студия Nerds</h1>
-      <section>
+      <section class="slider">
         <h2>Подробная информация</h2>
         <h3>Долго, дорого, скрупулезно.</h3>
         <p>
           Математически выверенный дизайн для вашего сайта или мобильного
           приложения.
         </p>
-        <button type="button">Узнать больше</button>
+        <img src="../img/slide1.png" alt="slider" />
+        <button type="button" class="button button-red button-big">
+          Узнать больше
+        </button>
       </section>
       <section>
-        <ul>
-          <li>
+        <ul class="feature-list">
+          <li class="feature-item">
             <img src="../img/RedSquare.jpg" />
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <button type="button">Заказать</button>
+            <button type="button" class="button button-red button-small">
+              Заказать
+            </button>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="../img/GreenSquare.jpg" />
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button type="button">Заказать</button>
+            <button type="button" class="button button-green button-small">
+              Заказать
+            </button>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="../img/YellowSquare.jpg" />
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button type="button">Заказать</button>
+            <button type="button" class="button button-yellow button-small">
+              Заказать
+            </button>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>
-          Исповедуем принципы минимализма и чистоты. Ставим математический
-          расчет превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <ul>
-          <p>Выполняем заказы на разработку:</p>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для IOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section>
-        <img src="../img/nerds.png" /><br />
-        <p>С 2004 года любим точность во всем:</p>
-        <ul>
-          <li>
-            146%
-            <p>Уровень самоотдачи</p>
-          </li>
-          <li>
-            100%
-            <p>Соблюдение сроков</p>
-          </li>
-          <li>
-            50%
-            <p>Минимальная предоплата</p>
-          </li>
-        </ul>
-      </section>
+      <div class="index-columns">
+        <section>
+          <h2>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <ul>
+            <p>Выполняем заказы на разработку:</p>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для IOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section>
+          <img src="../img/nerds.png" /><br />
+          <p>С 2004 года любим точность во всем:</p>
+          <ul>
+            <li>
+              146%
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li>
+              100%
+              <p>Соблюдение сроков</p>
+            </li>
+            <li>
+              50%
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </section>
+      </div>
       <section>
         <ul>
           <li><img src="#" /></li>
@@ -112,7 +136,9 @@
         </p>
         <br />
         <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <button type="button">Напишите нам</button>
+        <button type="button" class="button button-red button-medium">
+          Напишите нам
+        </button>
       </section>
       <div>
         <img src="../img/map.jpg" />
@@ -159,7 +185,9 @@
           />
         </p>
       </form>
-      <button type="submit">Отправить</button>
+      <button type="submit" class="button button-red button- huge">
+        Отправить
+      </button>
       <button type="button">Закрыть</button>
     </section>
   </body>

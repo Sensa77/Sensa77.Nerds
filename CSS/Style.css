@@ -1,0 +1,179 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: black;
+  text-transform: none;
+  background-color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: white;
+  vertical-align: middle;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 44px;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  padding-right: 245px;
+  padding-left: 202px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.main-header-logo {
+  padding-left: 140px;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 140px;
+  width: 115px;
+}
+
+.basket {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: black;
+  background-color: #eeeeee;
+  border: none;
+  font-weight: 700;
+}
+
+.button {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 18px;
+  border: none;
+}
+
+.button-red {
+  background-color: #fb565a;
+}
+
+.button-red:hover,
+.button-red:focus {
+  background-color: #e74246;
+}
+
+.button-red:active {
+  background-color: #d7373b;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  background-color: #00aa62;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+.button-medium {
+  padding-right: 45px;
+  padding-left: 46px;
+}
+
+.button-small {
+  padding-right: 39px;
+  padding-left: 40px;
+}
+
+.button-big {
+  padding-left: 53px;
+  padding-right: 54px;
+}
+
+.button-huge {
+  padding-right: 84px;
+  padding-left: 84px;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: fb565a;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider h3 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.index-columns h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
