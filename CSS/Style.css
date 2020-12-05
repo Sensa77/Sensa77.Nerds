@@ -231,10 +231,6 @@ button {
   margin-bottom: 38px;
 }
 
-.feature-list {
-  list-style: none;
-}
-
 .feature-item h3 {
   font-size: 24px;
   line-height: 30px;
@@ -243,12 +239,19 @@ button {
   margin-top: 0;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .index-columns h2 {
   font-size: 45px;
   line-height: 45px;
 }
 
-.offers-list {
+.feature-list {
+  padding: 0;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   height: 346px;
@@ -256,11 +259,7 @@ button {
   align-self: start;
   text-align: start;
   height: 348px;
-}
-
-.feature-list {
-  padding: 0;
-  margin-bottom: 0;
+  list-style: none;
 }
 
 .feature-item {
@@ -336,14 +335,59 @@ button {
   display: flex;
   flex-direction: column;
   margin-top: 122px;
+  width: 360px;
 }
 
+.experience-img {
+  align-items: flex-end;
+  margin-bottom: 35px;
+  align-self: flex-end;
+}
+
+.experience-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 51px;
+  align-self: flex-end;
+  margin-right: 16px;
+}
 .experience-procent {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  align-self: flex-end;
 }
 
-.experience-img {
-  margin-left: 139px;
+.experience-procent-list {
+  padding-left: 0;
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 343px;
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 31px;
+  text-align: start;
+  font-weight: 900;
+  font-size: 45px;
+  margin-top: 0;
+}
+
+.procent {
+  position: absolute;
+  top: 0;
+  font-size: 23px;
+}
+
+.experience-description {
+  margin-top: 0;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
