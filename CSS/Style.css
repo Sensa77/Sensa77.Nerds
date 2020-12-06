@@ -59,8 +59,6 @@ button {
 
 .site-navigation a {
   display: block;
-  padding-right: 24px;
-  padding-left: 24px;
 }
 
 .user-navigation {
@@ -178,7 +176,7 @@ button {
   color: black;
 }
 
-.element-navigation-active,
+.element-navigation-link--active,
 .user-navigation-active {
   border-bottom: 2px solid #fb565a;
 }
@@ -197,7 +195,7 @@ button {
 
 .slider {
   background-color: #eeeeee;
-  height: 414px;
+  height: 422px;
 }
 
 .detailed-information {
@@ -215,7 +213,8 @@ button {
   background-size: 700px 414px;
   background-repeat: no-repeat;
   background-position: right;
-  height: 414px;
+  height: 427px;
+  background-position-x: 430px;
 }
 
 .slider h3 {
@@ -251,11 +250,11 @@ button {
 
 .feature-list {
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 122px;
   display: flex;
   justify-content: space-between;
   height: 346px;
-  margin-top: 87px;
+  margin-top: 79px;
   align-self: start;
   text-align: start;
   height: 348px;
@@ -271,7 +270,7 @@ button {
   margin-bottom: 18px;
 }
 
-.description-of-offers {
+.description-offers {
   margin-bottom: 32px;
 }
 
@@ -282,19 +281,19 @@ button {
 .about-us {
   display: flex;
   flex-direction: column;
-  align-self: start;
   text-align: start;
 }
 
-.about-us-tittle {
+.about-us-title {
+  margin-top: 34px;
   font-weight: 500;
-  padding-top: 118px;
-  margin-bottom: 18px;
+  margin-bottom: 32px;
   margin-right: 0;
 }
 
 .about-us-description {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
+  margin-top: 0;
 }
 
 .about-us-heading {
@@ -302,10 +301,11 @@ button {
   text-transform: uppercase;
   font-weight: 500;
   text-align: start;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .about-us-list {
+  margin-top: 0;
   padding-left: 36px;
   list-style: none;
   padding-left: 0;
@@ -334,7 +334,6 @@ button {
 .experience {
   display: flex;
   flex-direction: column;
-  margin-top: 122px;
   width: 360px;
 }
 
@@ -352,14 +351,14 @@ button {
   align-self: flex-end;
   margin-right: 16px;
 }
-.experience-procent {
+.experience-percent {
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-self: flex-end;
 }
 
-.experience-procent-list {
+.experience-percent-list {
   padding-left: 0;
   margin-top: 0;
   list-style: none;
@@ -370,17 +369,16 @@ button {
 }
 
 .experience-item {
-  position: relative;
   margin-bottom: 31px;
   text-align: start;
   font-weight: 900;
   font-size: 45px;
+  line-height: 49px;
   margin-top: 0;
 }
 
-.procent {
-  position: absolute;
-  top: 0;
+.percent {
+  vertical-align: super;
   font-size: 23px;
 }
 
