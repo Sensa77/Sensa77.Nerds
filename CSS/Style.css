@@ -24,6 +24,15 @@ button {
   border-radius: 5px;
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -105,6 +114,13 @@ button {
   padding-bottom: 16px;
   line-height: 18px;
   border: none;
+}
+
+.button:active {
+  color: #ffffff48;
+  box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.12) inset;
+  -webkit-box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.12) inset;
+  -moz-box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.12) inset;
 }
 
 .button-red {
@@ -405,9 +421,18 @@ button {
   margin-bottom: 119px;
 }
 
-.link:hover path,
-.link:focus path {
-  fill: #000000;
+.link-item {
+  opacity: 0.2;
+}
+
+.link-item:hover,
+.link-item:focus {
+  opacity: 1;
+}
+
+.link-item:active,
+.link-item:active {
+  opacity: 0.1;
 }
 
 .address {
@@ -655,4 +680,28 @@ button {
 .write-us-close:active::before,
 .write-us-close:active::after {
   background-color: #ffeeee;
+}
+
+.write-us-name:hover,
+.write-us-email:hover,
+.write-us-text:hover {
+  color: #b4b9bb;
+}
+
+.write-us-name:hover::placeholder,
+.write-us-email:hover::placeholder,
+.write-us-text:hover::placeholder {
+  color: #a1a1a1;
+}
+
+.write-us-name:focus,
+.write-us-email:focus,
+.write-us-text:focus {
+  color: #000000;
+}
+
+.write-us-name:focus::placeholder,
+.write-us-email:focus::placeholder,
+.write-us-text:focus::placeholder {
+  color: #444444;
 }
