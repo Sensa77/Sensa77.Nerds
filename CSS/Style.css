@@ -263,6 +263,9 @@ button {
 .index-columns {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 33px;
+  margin-bottom: 39px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .index-columns h2 {
@@ -272,7 +275,7 @@ button {
 
 .feature-list {
   padding: 0;
-  margin-bottom: 122px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   height: 346px;
@@ -281,6 +284,8 @@ button {
   text-align: start;
   height: 348px;
   list-style: none;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .feature-item {
@@ -294,11 +299,6 @@ button {
 
 .description-offers {
   margin-bottom: 32px;
-}
-
-.index-columns {
-  display: flex;
-  margin-bottom: 62px;
 }
 
 .about-us {
@@ -370,7 +370,7 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 32px;
   align-self: flex-end;
   margin-right: 16px;
 }
@@ -386,13 +386,11 @@ button {
   margin-top: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 343px;
 }
 
 .experience-item {
-  margin-bottom: 31px;
+  margin-bottom: 17px;
   text-align: start;
   font-weight: 900;
   font-size: 45px;
@@ -418,11 +416,31 @@ button {
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  margin-bottom: 119px;
+  margin-bottom: 80px;
+  padding-bottom: 44px;
+  padding-left: 32px;
+  padding-right: 41px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .link-item {
   opacity: 0.2;
+}
+
+.links li:not(:last-child) {
+  padding-right: 49px;
+  position: relative;
+}
+
+.links li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 53px;
+  background-color: #eeeeee;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .link-item:hover,
@@ -502,6 +520,7 @@ button {
   display: flex;
   justify-content: space-between;
   width: 944px;
+  margin-bottom: 70px;
 }
 
 .basement ul {
@@ -564,22 +583,26 @@ button {
   fill: #e37376;
 }
 
-.form {
-  position: relative;
-}
-
 .write-us {
-  height: 593px;
-  width: 962px;
+  display: none;
+  height: 590px;
+  width: 960px;
   box-shadow: 0 0 5px;
   align-items: center;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  bottom: 180px;
+  left: 473px;
+  top: 1707px;
+  right: 240px;
 }
 
 .write-us-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  padding-top: 74px;
+  margin-top: 74px;
   margin-left: 103px;
   text-align: start;
 }
