@@ -16,16 +16,14 @@
       <nav class="main-navigation">
         <div class="container">
           <div class="main-navigation-block container">
-            <a>
-              <img
-                src="svg/nerds-logo.svg"
-                class="main-header-logo"
-                width="160"
-                height="65"
-                alt="Логотип
+            <img
+              src="svg/nerds-logo.svg"
+              class="main-header-logo"
+              width="160"
+              height="65"
+              alt="Логотип
             Nerds"
-              />
-            </a>
+            />
             <ul class="site-navigation">
               <li class="element-navigation">
                 <a
@@ -58,22 +56,52 @@
       <section class="slider">
         <h2 class="visually-hidden">Подробная информация</h2>
         <div class="container">
-          <div class="slider-block">
-            <div class="detailed-information">
-              <h3>
-                Долго, дорого, <br />
-                скрупулезно.
-              </h3>
-              <p class="slider-text">
-                Математически выверенный дизайн<br />
-                для вашего сайта или мобильного приложения.
-              </p>
-              <button type="button" class="button button-red button-big">
-                Узнать больше
-              </button>
-            </div>
-          </div>
-        </div>
+          <ul class="slider-list">
+            <li class="slider-block slider-block-1">
+              <div class="detailed-information">
+                <h3>
+                  Долго, дорого, <br />
+                  скрупулезно.
+                </h3>
+                <p class="slider-text">
+                  Математически выверенный дизайн<br />
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <button type="button" class="button button-red button-big">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+            <!--<li class="slider-block slider-block-2">
+              <div class="detailed-information">
+                <h3>
+                  Любим математику <br />
+                  как никто другой
+                </h3>
+                <p class="slider-text">
+                  Никакого креатива, только математические формулы <br />
+                  для расчета идеальных пропорций.
+                </p>
+                <button type="button" class="button button-red button-big">
+                  Узнать больше
+                </button>
+              </div>
+            </li>
+            <li class="slider-block slider-block-3">
+              <div class="detailed-information">
+                <h3>
+                  Только ночь, <br />
+                  только хардкор
+                </h3>
+                <p class="slider-text">
+                  Работать днем, как все? Мы против этого. <br />
+                  Ближе к полуночи работа только начинается.
+                </p>
+                <button type="button" class="button button-red button-big">
+                  Узнать больше
+                </button>
+              </div>
+            </li>-->
       </section>
       <section>
         <div class="container">
@@ -150,26 +178,24 @@
               <p class="experience-heading">
                 С 2004 года любим точность во всем:
               </p>
-              <ul class="experience-percent-list">
-                <li>
-                  <p class="experience-item">
+              <table class="experience-percent-list">
+                <tr>
+                  <td class="experience-item">
                     146<span class="percent">%</span>
-                  </p>
-                  <p class="experience-description">Уровень самоотдачи</p>
-                </li>
-                <li>
-                  <p class="experience-item">
+                  </td>
+                  <td class="experience-item">
                     100<span class="percent">%</span>
-                  </p>
-                  <p class="experience-description">Соблюдение сроков</p>
-                </li>
-                <li>
-                  <p class="experience-item">
+                  </td>
+                  <td class="experience-item">
                     50<span class="percent">%</span>
-                  </p>
-                  <p class="experience-description">Минимальная предоплата</p>
-                </li>
-              </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="experience-description">Уровень самоотдачи</td>
+                  <td class="experience-description">Соблюдение сроков</td>
+                  <td class="experience-description">Минимальная предоплата</td>
+                </tr>
+              </table>
             </div>
           </section>
         </div>
@@ -183,6 +209,7 @@
                 src="./img/logo-1.png"
                 width="199"
                 height="68"
+                alt="html-academy"
               />
             </li>
             <li>
@@ -191,6 +218,7 @@
                 src="./img/logo-2.png"
                 width="209"
                 height="90"
+                alt="barbershop"
               />
             </li>
             <li>
@@ -199,6 +227,7 @@
                 src="./img/logo-3.png"
                 width="185"
                 height="52"
+                alt="pink"
               />
             </li>
             <li>
@@ -207,6 +236,7 @@
                 src="./img/logo-4.png"
                 width="173"
                 height="84"
+                alt="mishka"
               />
             </li>
           </ul>
@@ -305,6 +335,7 @@
     <section class="write-us">
       <form class="form" action="#" method="post">
         <p class="write-us-title">Напишите нам</p>
+        <!-- названия классов плохие. two-form, write-us-form1 ничего не говорят по сути. -->
         <div class="two-form">
           <p class="write-us-form1">
             <label class="write-us-label" for="user-name">Ваше имя</label>
