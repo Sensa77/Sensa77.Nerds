@@ -800,3 +800,18 @@ button {
   font-size: 14px;
   line-height: 18px;
 }
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  justify-content: flex-end;
+}
+
+.portfolio-item {
+  height: 616px;
+  width: 359px;
+  margin-left: 49px;
+  margin-bottom: 33px;
+}
