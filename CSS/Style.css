@@ -801,17 +801,153 @@ button {
   line-height: 18px;
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
   justify-content: flex-end;
+  width: 767px;
 }
 
 .portfolio-item {
   height: 616px;
   width: 359px;
-  margin-left: 49px;
   margin-bottom: 33px;
+}
+
+.portfolio-item:nth-child(2n) {
+  margin-left: 49px;
+}
+
+.cost {
+  width: 260px;
+  height: 80px;
+  background-color: #eeee;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.range::before {
+  content: "";
+  background-color: #00ca74;
+  position: absolute;
+  height: 2px;
+  width: 151px;
+  top: 39px;
+  left: 20px;
+}
+
+.range::after {
+  content: "";
+  background-color: #d7dcde;
+  position: absolute;
+  height: 2px;
+  width: 68px;
+  right: 20px;
+  top: 39px;
+}
+
+.engine1 {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 17px;
+  cursor: pointer;
+}
+
+.engine2 {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: 81px;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 80px;
+  height: 38px;
+  background-color: #eeee;
+  border: none;
+  border-radius: 4px;
+}
+
+.amount-field {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  align-items: center;
+  margin-bottom: 62px;
+}
+
+input[type="number"]::placeholder {
+  text-align: center;
+}
+
+.filter-header {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: start;
+  margin-top: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.fake-radio {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #b8b8b8;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 105px;
+}
+
+.radio-button input[type="radio"]:checked + .fake-radio::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  left: 4px;
+  top: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
