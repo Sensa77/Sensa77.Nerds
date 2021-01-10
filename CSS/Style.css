@@ -892,7 +892,7 @@ input[type="number"] {
   line-height: 22px;
   text-transform: uppercase;
   align-items: center;
-  margin-bottom: 62px;
+  margin-bottom: 53px;
 }
 
 input[type="number"]::placeholder {
@@ -906,6 +906,7 @@ input[type="number"]::placeholder {
   font-weight: 600;
   text-align: start;
   margin-top: 0;
+  margin-bottom: 14px;
 }
 
 input[type="radio"] {
@@ -916,6 +917,7 @@ input[type="radio"] {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
+  color: #283136;
 }
 
 .fake-radio {
@@ -950,4 +952,92 @@ input[type="radio"] {
   top: 4px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.grid {
+  margin-bottom: 42px;
+}
+
+.radio-button .radio-adaptive,
+.radio-button .radio-fixed,
+.radio-button .radio-rubber {
+  height: 25px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  color: #283136;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.checkbox-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 183px;
+  margin-bottom: 48px;
+}
+
+.fake-checkbox {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 3px solid #b8b8b8;
+  width: 23px;
+  height: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checkbox-button input[type="checkbox"]:checked ~ .fake-checkbox::after {
+  content: "";
+  position: absolute;
+  background-color: #b8b8b8;
+  width: 4px;
+  height: 20px;
+  box-sizing: border-box;
+  left: 13px;
+  top: -4px;
+  transform: rotate(45deg);
+  outline: 2px solid #fff;
+  z-index: 1;
+}
+
+.checkbox-button input[type="checkbox"]:checked ~ .fake-checkbox::before {
+  content: "";
+  position: absolute;
+  background-color: #b8b8b8;
+  width: 4px;
+  height: 9px;
+  box-sizing: border-box;
+  left: 5px;
+  top: 5px;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+
+.checkbox-button .checkbox-slider,
+.checkbox-button .checkbox-advantage,
+.checkbox-button .checkbox-news,
+.checkbox-button .checkbox-gallery,
+.checkbox-button .checkbox-basket {
+  height: 23px;
+}
+
+.button-show {
+  background-color: #eeeeee;
+  color: #000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-left: 0;
 }

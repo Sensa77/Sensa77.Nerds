@@ -53,15 +53,15 @@
     </header>
     <main>
       <section class="store-header">
-          <div class="container">
-        <p class="store-title">Магазин готовых шаблонов</p>
+        <div class="container">
+          <p class="store-title">Магазин готовых шаблонов</p>
+        </div>
       </section>
-    </div>
       <section>
         <div class="container">
           <ul class="modifiers">
             <li>
-            <p>Стоимость:</p>
+              <p>Стоимость:</p>
             </li>
             <li>
               <p>Сортировать:</p>
@@ -78,59 +78,148 @@
         <div class="container">
           <div class="main">
             <div class="filters">
-            <div class="cost">
-              <svg class="engine1" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
-              <svg class="engine2" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
-              <div class="range">
-            </div>
-          </div>
-          <div class="amount-field">
-            <label for="min">От</label>
-            <input type="number" id="min" min="0" placeholder="0">
-            <label for="max">До</label>
-            <input type="number" id="max" max="15000" placeholder="15000">
-          </div>
-          <div class="grid">
-            <p class="filter-header">Сетка:</p>
-            <div class="radio-button">
-              <div class="radio-adaptive">
-            <input type="radio" id="adaptive" name="radio">
-              <span class="fake-radio"></span>
-            <label for="adaptive" class="radio-label">Адаптивная</label></div>
-            <div class="radio-fixed">
-            <input type="radio" id="fixed" name="radio">
-            <span class="fake-radio"></span>
-              <label for="fixed" class="radio-label">Фиксированная</label></div>
-              <div class="radio-rubber">
-              <input type="radio" id="rubber" name="radio">
-              <span class="fake-radio"></span>
-                <label for="rubber" class="radio-label">Резиновая</label>
+              <div class="cost">
+                <svg
+                  class="engine1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                >
+                  <path
+                    opacity=".3"
+                    fill="#ABABAB"
+                    d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                  />
+                  <circle fill="#FFF" cx="10" cy="10" r="10" />
+                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                </svg>
+                <svg
+                  class="engine2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="23"
+                  viewBox="0 0 20 23"
+                >
+                  <path
+                    opacity=".3"
+                    fill="#ABABAB"
+                    d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                  />
+                  <circle fill="#FFF" cx="10" cy="10" r="10" />
+                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                </svg>
+                <div class="range"></div>
               </div>
+              <div class="amount-field">
+                <label for="min">От</label>
+                <input type="number" id="min" min="0" placeholder="0" />
+                <label for="max">До</label>
+                <input type="number" id="max" max="15000" placeholder="15000" />
+              </div>
+              <div class="grid">
+                <p class="filter-header">Сетка:</p>
+                <div class="radio-button">
+                  <div class="radio-adaptive">
+                    <input type="radio" id="adaptive" name="radio" checked />
+                    <span class="fake-radio"></span>
+                    <label for="adaptive" class="radio-label">Адаптивная</label>
+                  </div>
+                  <div class="radio-fixed">
+                    <input type="radio" id="fixed" name="radio" />
+                    <span class="fake-radio"></span>
+                    <label for="fixed" class="radio-label">Фиксированная</label>
+                  </div>
+                  <div class="radio-rubber">
+                    <input type="radio" id="rubber" name="radio" />
+                    <span class="fake-radio"></span>
+                    <label for="rubber" class="radio-label">Резиновая</label>
+                  </div>
+                </div>
+              </div>
+              <p class="filter-header">Особенности:</p>
+              <div class="checkbox-button">
+                <div class="checkbox-slider">
+                  <input
+                    type="checkbox"
+                    id="checkbox1"
+                    name="checkbox"
+                    value="Слайдер"
+                    checked
+                  />
+                  <span class="fake-checkbox"></span>
+                  <label for="checkbox1" class="checkbox-label">Слайдер</label>
+                </div>
+                <div class="checkbox-advantage">
+                  <input
+                    type="checkbox"
+                    id="checkbox2"
+                    name="checkbox"
+                    value="Блок преимуществ"
+                  />
+                  <span class="fake-checkbox"></span>
+                  <label for="checkbox2" class="checkbox-label"
+                    >Блок преимуществ</label
+                  >
+                </div>
+                <div class="checkbox-news">
+                  <input
+                    type="checkbox"
+                    id="checkbox3"
+                    name="checkbox"
+                    value="Новости"
+                    checked
+                  />
+                  <span class="fake-checkbox"></span>
+                  <label for="checkbox3" class="checkbox-label">Новости</label>
+                </div>
+                <div class="checkbox-gallery">
+                  <input
+                    type="checkbox"
+                    id="checkbox4"
+                    name="checkbox"
+                    value="Галерея"
+                  />
+                  <span class="fake-checkbox"></span>
+                  <label for="checkbox4" class="checkbox-label">Галерея</label>
+                </div>
+                <div class="checkbox-basket">
+                  <input
+                    type="checkbox"
+                    id="checkbox5"
+                    name="checkbox"
+                    value="Корзина"
+                  />
+                  <span class="fake-checkbox"></span>
+                  <label for="checkbox5" class="checkbox-label">Корзина</label>
+                </div>
+              </div>
+              <button type="submit" class="button button-huge button-show">
+                Показать
+              </button>
+            </div>
+            <ul class="portfolio">
+              <li class="portfolio-item">
+                <img src="./img/sedona.jpg" alt="Sedona" />
+              </li>
+              <li class="portfolio-item">
+                <img src="./img/pink.jpg" alt="Pink" />
+              </li>
+              <li class="portfolio-item">
+                <img src="./img/barbershop.jpg" alt="Borodinski" />
+              </li>
+              <li class="portfolio-item">
+                <img src="./img/mishka.jpg" alt="Mishka" />
+              </li>
+              <li class="portfolio-item">
+                <img src="./img/aplus.jpg" alt="Aplus" />
+              </li>
+              <li class="portfolio-item">
+                <img src="./img/kvast.jpg" alt="Kvast" />
+              </li>
+            </ul>
           </div>
         </div>
-        </div>
-          <ul class="portfolio">
-            <li class="portfolio-item">
-              <img src="./img/sedona.jpg" alt="Sedona">
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/pink.jpg" alt="Pink">
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/barbershop.jpg" alt="Borodinski">
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/mishka.jpg" alt="Mishka">
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/aplus.jpg" alt="Aplus">
-            </li>
-            <li class="portfolio-item">
-              <img src="./img/kvast.jpg" alt="Kvast">
-            </li>
-          </ul>
-        </div>
-      </div>
       </section>
     </main>
     <footer>
