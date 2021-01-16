@@ -26,17 +26,17 @@
             />
             <ul class="site-navigation">
               <li class="element-navigation">
-                <a
-                  href="#"
-                  class="element-navigation-link element-navigation-link--active"
-                  >Студия</a
-                >
+                <a href="/index.html" class="element-navigation-link">Студия</a>
               </li>
               <li class="element-navigation">
                 <a href="#" class="element-navigation-link">Клиенты</a>
               </li>
               <li class="element-navigation">
-                <a href="#" class="element-navigation-link">Магазин</a>
+                <a
+                  href="#"
+                  class="element-navigation-link element-navigation-link--active"
+                  >Магазин</a
+                >
               </li>
               <li class="element-navigation">
                 <a href="#" class="element-navigation-link">Контакты</a>
@@ -67,9 +67,15 @@
               <p>Сортировать:</p>
             </li>
             <li class="modifiers-sorting">
-              <p>По цене</p>
+              <p class="modifiers-active">По цене</p>
               <p>По типу</p>
-              <p>По названию</p>
+              <div class="name-filter">
+                <p>По названию</p>
+                <div class="filters-triangles">
+                  <div class="filter-triangle-down"></div>
+                  <div class="filter-triangle-up"></div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -111,32 +117,45 @@
                 </svg>
                 <div class="range"></div>
               </div>
-              <div class="amount-field">
-                <label for="min">От</label>
-                <input type="number" id="min" min="0" placeholder="0" />
-                <label for="max">До</label>
-                <input type="number" id="max" max="15000" placeholder="15000" />
-              </div>
-              <div class="grid">
-                <p class="filter-header">Сетка:</p>
-                <div class="radio-button">
-                  <div class="radio-adaptive">
-                    <input type="radio" id="adaptive" name="radio" checked />
-                    <span class="fake-radio"></span>
-                    <label for="adaptive" class="radio-label">Адаптивная</label>
-                  </div>
-                  <div class="radio-fixed">
-                    <input type="radio" id="fixed" name="radio" />
-                    <span class="fake-radio"></span>
-                    <label for="fixed" class="radio-label">Фиксированная</label>
-                  </div>
-                  <div class="radio-rubber">
-                    <input type="radio" id="rubber" name="radio" />
-                    <span class="fake-radio"></span>
-                    <label for="rubber" class="radio-label">Резиновая</label>
+              <form>
+                <div class="amount-field">
+                  <label for="min">От</label>
+                  <input type="number" id="min" min="0" placeholder="0" />
+                  <label for="max">До</label>
+                  <input
+                    type="number"
+                    id="max"
+                    max="15000"
+                    placeholder="15000"
+                  />
+                </div>
+              </form>
+              <form>
+                <div class="grid">
+                  <p class="filter-header">Сетка:</p>
+                  <div class="radio-button">
+                    <div class="radio-adaptive">
+                      <input type="radio" id="adaptive" name="radio" checked />
+                      <span class="fake-radio"></span>
+                      <label for="adaptive" class="radio-label"
+                        >Адаптивная</label
+                      >
+                    </div>
+                    <div class="radio-fixed">
+                      <input type="radio" id="fixed" name="radio" />
+                      <span class="fake-radio"></span>
+                      <label for="fixed" class="radio-label"
+                        >Фиксированная</label
+                      >
+                    </div>
+                    <div class="radio-rubber">
+                      <input type="radio" id="rubber" name="radio" disabled />
+                      <span class="fake-radio"></span>
+                      <label for="rubber" class="radio-label">Резиновая</label>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </form>
               <p class="filter-header">Особенности:</p>
               <div class="checkbox-button">
                 <div class="checkbox-slider">
@@ -436,5 +455,49 @@
         </div>
       </div>
     </footer>
+    <section class="write-us">
+      <form class="form" action="#" method="post">
+        <p class="write-us-title">Напишите нам</p>
+        <!-- названия классов плохие. two-form, write-us-form1 ничего не говорят по сути. -->
+        <div class="two-form">
+          <p class="write-us-form1">
+            <label class="write-us-label" for="user-name">Ваше имя</label>
+            <input
+              class="write-us-name"
+              id="user-name"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+              required
+            />
+          </p>
+          <p class="write-us-form2">
+            <label class="write-us-label" for="user-login">Ваш e-mail:</label>
+            <input
+              class="write-us-email"
+              id="user-login"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </p>
+        </div>
+        <p class="write-us-form3">
+          <label class="write-us-label" for="user-text">Текст письма:</label>
+          <input
+            class="write-us-text"
+            id="user-text"
+            type="text"
+            name="text"
+            placeholder="В свободной форме"
+          />
+        </p>
+        <button type="submit" class="button button-red button-huge">
+          Отправить
+        </button>
+        <button class="write-us-close" type="button"></button>
+      </form>
+    </section>
+    <script src="/js/script.js"></script>
   </body>
 </html>
