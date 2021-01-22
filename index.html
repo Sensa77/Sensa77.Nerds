@@ -36,7 +36,9 @@
                 <a href="#" class="element-navigation-link">Клиенты</a>
               </li>
               <li class="element-navigation">
-                <a href="/nerds-catalog.html" class="element-navigation-link">Магазин</a>
+                <a href="/nerds-catalog.html" class="element-navigation-link"
+                  >Магазин</a
+                >
               </li>
               <li class="element-navigation">
                 <a href="#" class="element-navigation-link">Контакты</a>
@@ -102,6 +104,31 @@
                 </button>
               </div>
             </li>-->
+          </ul>
+          <form class="slider-radio">
+            <input
+              type="radio"
+              id="slider-radio-circle1"
+              value="radio-circle1"
+              name="radio-circle"
+            />
+            <label for="slider-radio-circle1" class="slider-fake-radio"></label>
+            <input
+              type="radio"
+              id="slder-radio-circle2"
+              value="radio-circle2"
+              name="radio-circle"
+            />
+            <label for="slder-radio-circle2" class="slider-fake-radio"></label>
+            <input
+              type="radio"
+              id="slider-radio-circle3"
+              value="radio-circle3"
+              name="radio-circle"
+            />
+            <label for="slider-radio-circle3" class="slider-fake-radio"></label>
+          </form>
+        </div>
       </section>
       <section>
         <div class="container">
@@ -266,7 +293,11 @@
           <a href="tel:+78122757575" class="map-phone"
             >тел. +7 (812) 275-75-75</a
           >
-          <button type="button" class="button button-red button-medium" id="write-us-button">
+          <button
+            type="button"
+            class="button button-red button-medium"
+            id="write-us-button"
+          >
             Напишите нам
           </button>
         </div>
@@ -335,9 +366,8 @@
     <section class="write-us">
       <form class="form" action="#" method="post">
         <p class="write-us-title">Напишите нам</p>
-        <!-- названия классов плохие. two-form, write-us-form1 ничего не говорят по сути. -->
-        <div class="two-form">
-          <p class="write-us-form1">
+        <div class="forms-name-email">
+          <p class="form-name">
             <label class="write-us-label" for="user-name">Ваше имя</label>
             <input
               class="write-us-name"
@@ -348,7 +378,7 @@
               required
             />
           </p>
-          <p class="write-us-form2">
+          <p class="form-email">
             <label class="write-us-label" for="user-login">Ваш e-mail:</label>
             <input
               class="write-us-email"
@@ -359,20 +389,27 @@
             />
           </p>
         </div>
-        <p class="write-us-form3">
+        <p class="form-text">
           <label class="write-us-label" for="user-text">Текст письма:</label>
-          <input
+          <textarea
+            type="text"
             class="write-us-text"
             id="user-text"
-            type="text"
             name="text"
             placeholder="В свободной форме"
-          />
+            cols="30"
+            rows="10"
+            wrap
+          ></textarea>
         </p>
         <button type="submit" class="button button-red button-huge">
           Отправить
         </button>
-        <button class="write-us-close" type="button" id="write-us-close"></button>
+        <button
+          class="write-us-close"
+          type="button"
+          id="write-us-close"
+        ></button>
       </form>
     </section>
     <script src="/js/script.js"></script>

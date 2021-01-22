@@ -311,6 +311,7 @@ button {
 .slider {
   background-color: #eee;
   height: 431px;
+  position: relative;
 }
 
 .slider-list {
@@ -362,8 +363,39 @@ button {
 .slider-text {
   margin: 0;
   margin-bottom: 38px;
-  font-weight: 500;
+  font-weight: 400;
   color: #283136;
+}
+
+.slider-radio {
+  position: absolute;
+  bottom: 96px;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+.slider-fake-radio {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 30px;
+}
+
+.slider-radio input[type="radio"]:checked + .slider-fake-radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 3px solid #c1c1c1;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  box-sizing: border-box;
 }
 
 .feature-item h3 {
@@ -725,18 +757,18 @@ button {
   text-align: start;
 }
 
-.write-us-form1 {
+.form-name {
   display: flex;
   flex-direction: column;
   margin-left: 103px;
 }
 
-.write-us-form2 {
+.form-email {
   display: flex;
   flex-direction: column;
 }
 
-.write-us-form3 {
+.form-text {
   display: flex;
   flex-direction: column;
   margin-left: 103px;
@@ -744,7 +776,7 @@ button {
   margin-right: 100px;
 }
 
-.two-form {
+.forms-name-email {
   display: flex;
   justify-content: space-between;
   margin-right: 100px;
@@ -779,7 +811,13 @@ button {
 
 .write-us-text {
   width: 740px;
-  min-height: 114px;
+  height: 114px;
+  padding-top: 10px;
+  text-overflow: clip;
+}
+
+.write-us-text::placeholder {
+  vertical-align: auto;
 }
 
 .write-us-close {
@@ -860,6 +898,9 @@ button {
 .store-title {
   margin: 0;
   padding-top: 79px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
 }
 
 .modifiers {
@@ -1022,7 +1063,7 @@ button {
   display: none;
 }
 
-.browser-item:hover {
+.portfolio-item:hover .browser-item {
   background-color: #666;
 }
 

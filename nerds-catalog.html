@@ -54,32 +54,30 @@
     <main>
       <section class="store-header">
         <div class="container">
-          <p class="store-title">Магазин готовых шаблонов</p>
+          <h2 class="store-title">Магазин готовых шаблонов</h2>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <ul class="modifiers">
-            <li>
-              <p>Стоимость:</p>
-            </li>
-            <li>
-              <p>Сортировать:</p>
-            </li>
-            <li class="modifiers-sorting">
-              <p class="modifiers-active">По цене</p>
-              <p>По типу</p>
-              <div class="name-filter">
-                <p>По названию</p>
-                <div class="filters-triangles">
-                  <div class="filter-triangle-down"></div>
-                  <div class="filter-triangle-up"></div>
-                </div>
+      <div class="container">
+        <ul class="modifiers">
+          <li>
+            <p>Стоимость:</p>
+          </li>
+          <li>
+            <p>Сортировать:</p>
+          </li>
+          <li class="modifiers-sorting">
+            <p class="modifiers-active">По цене</p>
+            <p>По типу</p>
+            <div class="name-filter">
+              <p>По названию</p>
+              <div class="filters-triangles">
+                <div class="filter-triangle-down"></div>
+                <div class="filter-triangle-up"></div>
               </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </div>
+          </li>
+        </ul>
+      </div>
       <section>
         <div class="container">
           <div class="main">
@@ -458,9 +456,8 @@
     <section class="write-us">
       <form class="form" action="#" method="post">
         <p class="write-us-title">Напишите нам</p>
-        <!-- названия классов плохие. two-form, write-us-form1 ничего не говорят по сути. -->
-        <div class="two-form">
-          <p class="write-us-form1">
+        <div class="forms-name-email">
+          <p class="form-name">
             <label class="write-us-label" for="user-name">Ваше имя</label>
             <input
               class="write-us-name"
@@ -471,7 +468,7 @@
               required
             />
           </p>
-          <p class="write-us-form2">
+          <p class="form-email">
             <label class="write-us-label" for="user-login">Ваш e-mail:</label>
             <input
               class="write-us-email"
@@ -482,15 +479,18 @@
             />
           </p>
         </div>
-        <p class="write-us-form3">
+        <p class="form-text">
           <label class="write-us-label" for="user-text">Текст письма:</label>
-          <input
+          <textarea
+            type="text"
             class="write-us-text"
             id="user-text"
-            type="text"
             name="text"
             placeholder="В свободной форме"
-          />
+            cols="30"
+            rows="10"
+            wrap
+          ></textarea>
         </p>
         <button type="submit" class="button button-red button-huge">
           Отправить
