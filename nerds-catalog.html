@@ -16,14 +16,14 @@
       <nav class="main-navigation">
         <div class="container">
           <div class="main-navigation-block container">
-            <img
+            <a href="/index.html"> <img
               src="svg/nerds-logo.svg"
               class="main-header-logo"
               width="160"
               height="65"
               alt="Логотип
             Nerds"
-            />
+            /></a>
             <ul class="site-navigation">
               <li class="element-navigation">
                 <a href="/index.html" class="element-navigation-link">Студия</a>
@@ -66,13 +66,15 @@
             <p>Сортировать:</p>
           </li>
           <li class="modifiers-sorting">
-            <p class="modifiers-active">По цене</p>
-            <p>По типу</p>
+            <button type="button" class="button-modifier modifiers-active">
+              По цене
+            </button>
+            <button type="button" class="button-modifier">По типу</button>
             <div class="name-filter">
-              <p>По названию</p>
+              <button type="button" class="button-modifier">По названию</button>
               <div class="filters-triangles">
-                <div class="filter-triangle-down"></div>
-                <div class="filter-triangle-up"></div>
+                <div><button type="button" class="filter-triangle-down"></div>
+                <div><button type="button" class="filter-triangle-up"></div>
               </div>
             </div>
           </li>
@@ -131,23 +133,26 @@
               <form>
                 <div class="grid">
                   <p class="filter-header">Сетка:</p>
+                  <!-- !!! фокуса нет, потому что элементы скрыты с помощью display: none. Тем самым, они считаются отсутствующими на странице,
+                  их нет. Поэтому ты и фокус не можешь передать инпуту, потому что его нет. Есть только его представление в виде <span>, но спан не
+                  может поймать фокус инпута другого. Ищи другой способ скрыть инпуты. У макеева на канале разбор как правильно скрывать инпуты. -->
                   <div class="radio-button">
                     <div class="radio-adaptive">
-                      <input type="radio" id="adaptive" name="radio" checked />
+                      <input type="radio" id="adaptive" name="radio" class="check-input" checked />
                       <span class="fake-radio"></span>
                       <label for="adaptive" class="radio-label"
                         >Адаптивная</label
                       >
                     </div>
                     <div class="radio-fixed">
-                      <input type="radio" id="fixed" name="radio" />
+                      <input type="radio" id="fixed" name="radio" class="check-input" />
                       <span class="fake-radio"></span>
                       <label for="fixed" class="radio-label"
                         >Фиксированная</label
                       >
                     </div>
                     <div class="radio-rubber">
-                      <input type="radio" id="rubber" name="radio" disabled />
+                      <input type="radio" id="rubber" name="radio" class="check-input" disabled  />
                       <span class="fake-radio"></span>
                       <label for="rubber" class="radio-label">Резиновая</label>
                     </div>
@@ -162,6 +167,7 @@
                     id="checkbox1"
                     name="checkbox"
                     value="Слайдер"
+                    class="check-input"
                     checked
                   />
                   <span class="fake-checkbox"></span>
@@ -173,6 +179,7 @@
                     id="checkbox2"
                     name="checkbox"
                     value="Блок преимуществ"
+                    class="check-input"
                     disabled
                   />
                   <span class="fake-checkbox"></span>
@@ -186,6 +193,7 @@
                     id="checkbox3"
                     name="checkbox"
                     value="Новости"
+                    class="check-input"
                     checked
                   />
                   <span class="fake-checkbox"></span>
@@ -197,6 +205,7 @@
                     id="checkbox4"
                     name="checkbox"
                     value="Галерея"
+                    class="check-input"
                   />
                   <span class="fake-checkbox"></span>
                   <label for="checkbox4" class="checkbox-label">Галерея</label>
@@ -207,6 +216,7 @@
                     id="checkbox5"
                     name="checkbox"
                     value="Корзина"
+                    class="check-input"
                   />
                   <span class="fake-checkbox"></span>
                   <label for="checkbox5" class="checkbox-label">Корзина</label>
@@ -387,7 +397,11 @@
           <a href="tel:+78122757575" class="map-phone"
             >тел. +7 (812) 275-75-75</a
           >
-          <button type="button" class="button button-red button-medium">
+          <button
+            type="button"
+            class="button button-red button-medium"
+            id="write-us-button"
+          >
             Напишите нам
           </button>
         </div>
