@@ -310,7 +310,7 @@ button {
 
 .slider {
   background-color: #eee;
-  height: 431px;
+  height: 421px;
   position: relative;
 }
 
@@ -324,7 +324,7 @@ button {
   flex-direction: column;
   text-align: start;
   align-items: flex-start;
-  padding-top: 78px;
+  padding-top: 68px;
 }
 
 .slider-block {
@@ -337,7 +337,7 @@ button {
 .slider-block-1 {
   background-image: url("../img/slide1.png");
   background-position-x: 430px;
-  background-position-y: 16px;
+  background-position-y: 8px;
   background-size: 700px 414px;
 }
 
@@ -372,8 +372,8 @@ button {
   justify-content: space-between;
   width: 88px;
   position: absolute;
-  bottom: 95px;
-  right: 49.4%;
+  bottom: 96px;
+  right: 49.1%;
 }
 
 .slider-fake-radio {
@@ -738,12 +738,11 @@ button {
   box-shadow: 0px 16px 24px 4px rgba(0, 0, 0, 0.47);
   align-items: center;
   background-color: white;
-  position: absolute;
+  position: fixed;
   z-index: 1;
-  bottom: 180px;
-  left: 473px;
-  top: 1707px;
-  right: 240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .write-us--show {
@@ -1007,7 +1006,7 @@ button {
 }
 
 .site-pages {
-  width: 767px;
+  width: 775px;
 }
 
 .portfolio {
@@ -1029,7 +1028,7 @@ button {
 }
 
 .portfolio-item:nth-child(2n) {
-  margin-left: 49px;
+  margin-left: 43px;
 }
 
 .browser-item {
@@ -1379,6 +1378,9 @@ input[type="number"]::placeholder {
   line-height: 18px;
   font-weight: 500;
   margin-left: 0;
+  display: inline-block;
+  text-align: center;
+  padding-left: 73px;
 }
 
 .button-show:hover,
@@ -1392,10 +1394,9 @@ input[type="number"]::placeholder {
 }
 
 .portfolio-pages {
-  display: flex;
-  width: 443px;
-  justify-content: space-between;
+  text-align: start;
   margin-bottom: 60px;
+  padding-left: 13px;
 }
 
 .button-page {
@@ -1406,6 +1407,7 @@ input[type="number"]::placeholder {
   font-size: 16px;
   line-height: 18px;
   border-radius: 4px;
+  margin-right: 8px;
 }
 
 .button-page:hover,
