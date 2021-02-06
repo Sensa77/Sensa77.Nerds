@@ -8,8 +8,8 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700.."
       rel="stylesheet"
     />
-    <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
@@ -60,7 +60,7 @@
         <h2 class="visually-hidden">Подробная информация</h2>
         <div class="container">
           <ul class="slider-list">
-            <li class="slider-block slider-block-1">
+            <li class="slider-block slider-block-1 slider-block--show">
               <div class="detailed-information">
                 <h3>
                   Долго, дорого, <br />
@@ -75,7 +75,7 @@
                 </button>
               </div>
             </li>
-            <!--<li class="slider-block slider-block-2">
+            <li class="slider-block slider-block-2">
               <div class="detailed-information">
                 <h3>
                   Любим математику <br />
@@ -104,21 +104,22 @@
                   Узнать больше
                 </button>
               </div>
-            </li>-->
+            </li>
           </ul>
           <form class="slider-radio">
             <input
               type="radio"
               id="slider-radio-circle1"
-              value="radio-circle1"
+              value="0"
               name="radio-circle"
               class="check-input"
+              checked
             />
             <label for="slider-radio-circle1" class="slider-fake-radio"></label>
             <input
               type="radio"
               id="slder-radio-circle2"
-              value="radio-circle2"
+              value="1"
               name="radio-circle"
               class="check-input"
             />
@@ -126,7 +127,7 @@
             <input
               type="radio"
               id="slider-radio-circle3"
-              value="radio-circle3"
+              value="2"
               name="radio-circle"
               class="check-input"
             />
@@ -368,25 +369,24 @@
       </div>
     </footer>
     <section class="write-us">
-      <form class="form" action="#" method="post">
+      <form class="form" action="#" method="post" id="write-us-form">
         <p class="write-us-title">Напишите нам</p>
         <div class="forms-name-email">
           <p class="form-name">
             <label class="write-us-label" for="user-name">Ваше имя</label>
             <input
-              class="write-us-name"
+              class="write-us-name write-us-input"
               id="user-name"
               type="text"
               name="name"
               placeholder="Имя Фамилия"
-              required
             />
           </p>
           <p class="form-email">
-            <label class="write-us-label" for="user-login">Ваш e-mail:</label>
+            <label class="write-us-label" for="user-email">Ваш e-mail:</label>
             <input
-              class="write-us-email"
-              id="user-login"
+              class="write-us-email write-us-input"
+              id="user-email"
               type="email"
               name="email"
               placeholder="email@example.com"
@@ -397,7 +397,7 @@
           <label class="write-us-label" for="user-text">Текст письма:</label>
           <textarea
             type="text"
-            class="write-us-text"
+            class="write-us-text write-us-input"
             id="user-text"
             name="text"
             placeholder="В свободной форме"
@@ -409,12 +409,8 @@
         <button type="submit" class="button button-red button-huge">
           Отправить
         </button>
-        <button
-          class="write-us-close"
-          type="button"
-          id="write-us-close"
-        ></button>
       </form>
+      <button class="write-us-close" type="button" id="write-us-close"></button>
     </section>
     <script src="/js/script.js"></script>
   </body>

@@ -328,10 +328,10 @@ button {
 }
 
 .slider-block {
-  display: flex;
+  display: none;
   justify-content: space-between;
   background-repeat: no-repeat;
-  height: 431px;
+  height: 421px;
 }
 
 .slider-block-1 {
@@ -350,6 +350,10 @@ button {
   background-image: url("../img/slide3.png");
   background-position-x: 400px;
   background-position-y: 19px;
+}
+
+.slider-block--show {
+  display: flex;
 }
 
 .slider h3 {
@@ -373,7 +377,8 @@ button {
   width: 88px;
   position: absolute;
   bottom: 96px;
-  right: 49.1%;
+  right: 50%;
+  transform: translate(50%, 0);
 }
 
 .slider-fake-radio {
@@ -384,7 +389,6 @@ button {
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 50%;
-  left: 30px;
 }
 
 .slider-radio input[type="radio"]:checked + .slider-fake-radio::after {
@@ -760,17 +764,20 @@ button {
 
 .form-name {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-left: 103px;
 }
 
 .form-email {
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
 .form-text {
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-left: 103px;
   margin-bottom: 47px;
@@ -1423,4 +1430,16 @@ input[type="number"]::placeholder {
 .page-1 {
   background-color: #fff;
   border: 3px solid #dbdbdb;
+}
+
+.write-us--error {
+  border: 2px solid red;
+}
+
+.text--error {
+  color: red;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translate(-50%, 0);
 }
