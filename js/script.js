@@ -18,16 +18,20 @@ writeUsClose.addEventListener("click", closeModal);
 const sliders = document.querySelectorAll(".slider-block");
 const sliderForm = document.querySelector(".slider-radio");
 
-sliderForm.addEventListener("change", (event) => {
 
-  sliders.forEach((slider) => {
+if(!!sliderForm) {
+  sliderForm.addEventListener("change", (event) => {
 
-    if(slider.classList.contains("slider-block--show")) {
-      slider.classList.remove("slider-block--show");
-    }
+    sliders.forEach((slider) => {
+  
+      if(slider.classList.contains("slider-block--show")) {
+        slider.classList.remove("slider-block--show");
+      }
+    });
+    sliders[event.target.value].classList.add("slider-block--show");
   });
-  sliders[event.target.value].classList.add("slider-block--show");
-});
+}
+
 
 
 const writeUsForm = document.querySelector("#write-us-form");
